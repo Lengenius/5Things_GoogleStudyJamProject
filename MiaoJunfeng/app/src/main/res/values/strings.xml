@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">5 Things</string>
+    <string name="info_name_header">Name:</string>
+    <string name="info_name_hind">Enter your name here</string>
+
+    <string name="info_height_header">Height:</string>
+    <string name="info_height_hint">Type your height in metric</string>
+
+    <string name="info_weight_header">Weight:</string>
+    <string name="info_weight_hint">Type your weight in kilogram.</string>
+    <string name="answer_thin">You are too light. You need more fat to protect your organ.</string>
+    <string name="answer_fit">You keep you BMI great. Keep on. Some abs exercise is helpful too. Or do some Dragon-Flag like Bruce Lee.</string>
+    <string name="answer_fat">You are over weight. You need to do more exercise. Buy a pair of new Shoes
+        like Brooks, and start running</string>
+
+    <string name="question_salary">Do you think you got enough salary?</string>
+    <string name="question_relationship">Are you in a stable relationship?</string>
+    <string name="salary_hint_enough">Yes, I can earn my life.</string>
+    <string name="salary_hint_no">No, I need some more to live better</string>
+    <string name="salary_hint_too_mush">I don't know where to spend my money.</string>
+    <string name="relationship_hint_yes">Yes</string>
+    <string name="relationship_hint_no">No, not yet.</string>
+
+    <string name="answer_salary_low">It seems you need some more money. How about gain some Android skills to be an Android Developer and earn your new life?</string>
+    <string name="answer_salary_fit">You are living good. But sometimes we need adventures. Why not try to make an Android App to fill your part-time?</string>
+    <string name="answer_salary_high">Awesome, you are rich! Maybe you want invest on some useful project. Like some Indie Android Developer.</string>
+    <string name="answer_relationship_in">Wish you love each other day by day. Spend more time with him/her. He/She may be your soul mate.</string>
+    <string name="answer_relationship_no">Enjoy your single time. At last, you will hate each other. Single time is precious.</string>
+
+    <string name="question_healthy_food">Which below are health food?</string>
+    <string name="healthy_food_1">fish</string>
+    <string name="healthy_food_2">chicken</string>
+    <string name="healthy_food_3">nuts</string>
+    <string name="healthy_food_4">milk</string>
+    <string name="healthy_food_5">cheese burger</string>
+    <string name="healthy_food_6">fried chicken</string>
+    <string name="answer_life_goal_yes">Glad to hear that, for life goal really maters. It will guide your life when you're confused or under great pressure.
+    Keep on moving. Wish you have the courage to get through the difficulties.</string>
+    <string name="answer_life_goal_no">Don't be afraid. Try every thing just like Judy did in Zootopia. You are more powerful than you think.</string>
+
+</resources>
