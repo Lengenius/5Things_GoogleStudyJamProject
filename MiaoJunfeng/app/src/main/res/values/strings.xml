@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">5 Things</string>
+    <string name="app_name">5个建议</string>
     <string name="info_name_header">Name:</string>
     <string name="info_name_hint">Enter your name here</string>
 

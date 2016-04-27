@@ -36,9 +36,20 @@ public class WelcomeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Calculate user Body Mess Index to give an advice.
+     * @param weight represents user's weight in kilogram.
+     * @param height represents user's height in metric.
+     * @return
+     */
     private float calBMI(float weight, float height) {
         return weight / (height * height);
     }
+
+    /**
+     * Add suitable advice to the result to the BMI index.
+     * @param bmi
+     */
 
     private void dealBMI(float bmi) {
         if (bmi < 18.5) {
@@ -50,6 +61,10 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Add advice in the result of user's chosen.
+     * deal with user event "on salary condition".
+     */
     public void addSalaryListener() {
         salaryRadioGroup = (RadioGroup) findViewById(R.id.salary_radio_group);
         int selectedSalary = salaryRadioGroup.getCheckedRadioButtonId();
@@ -62,6 +77,10 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Add advice in the result of user's chosen.
+     * deal with user event "on relationship condition".
+     */
     public void addRelationshipListener() {
         relationshipRadioGroup = (RadioGroup) findViewById(R.id.relationship_radio_group);
         int selectedRelationship = relationshipRadioGroup.getCheckedRadioButtonId();
@@ -71,9 +90,11 @@ public class WelcomeActivity extends AppCompatActivity {
             stringBuffer.append(getResources().getString(R.string.answer_relationship_in));
         }
     }
-
+    /**
+     * A little test for healthy knowledge.
+     * Give advice on user's answer.
+     */
     public void addHealthyFood() {
-//        Boolean chicken, fish, nuts, cheeseBurger, milk, friedChicken;
         CheckBox checkBoxchicken, checkBoxfish, checkBoxnuts, checkBoxcheeseburger, checkBoxmilk, checkBoxfriedchicken;
         checkBoxchicken = (CheckBox) findViewById(R.id.food_chicken);
         checkBoxfish = (CheckBox) findViewById(R.id.food_fish);
@@ -98,6 +119,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Deal with user's dream chosen.
+     */
     public void addDream() {
         dreamRadioGroup = (RadioGroup) findViewById(R.id.dream_radio_group);
         int dreamOrNot = dreamRadioGroup.getCheckedRadioButtonId();
@@ -115,6 +139,9 @@ public class WelcomeActivity extends AppCompatActivity {
         dealBMI(calBMI(weight, height));
     }
 
+    /**
+     * Submit all answer and make a email for the user to remember all the advices.
+     */
     public void submit() {
         name = edName.getText().toString();
         addBMI();

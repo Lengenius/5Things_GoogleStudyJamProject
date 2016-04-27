@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">5 Things</string>
+    <string name="app_name">5 suggestions.</string>
     <string name="answer_fat">1. 你有点超重了，最好多做点运动，买一双李宁“赤兔”智能跑鞋吧，不容易受伤。\n</string>
     <string name="answer_fit">1. 你的体重保持的不错，继续努力，想要六块腹肌？买个健腹轮不错，或者学一下李小龙的截拳道。\n</string>
     <string name="answer_life_goal_no">5. 别害怕，没什么大不了的，学学《疯狂动物园》里面的朱迪吧，多多尝试，你比你想象的更强。现在上支付宝电影票还能享受6.8折优惠。\n</string>
