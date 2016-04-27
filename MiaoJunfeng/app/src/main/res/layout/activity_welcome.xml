@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,8 +9,268 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cn.studyjams.s1.sj55.miaojunfeng.WelcomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HeaderFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_name_header" />
+
+            <EditText
+                android:id="@+id/user_info_name"
+                style="@style/ContentFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/info_name_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HeaderFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_height_header" />
+
+            <EditText
+                style="@style/ContentFont"
+                android:id="@+id/user_info_height"
+                android:layout_width="0dp"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/info_height_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HeaderFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_weight_header" />
+
+            <EditText
+                style="@style/ContentFont"
+                android:id="@+id/user_info_weight"
+                android:inputType="numberDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/info_weight_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeaderFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/question_salary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/salary_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/salary_enough"
+                        android:checked="true"
+                        style="@style/ContentFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salary_hint_enough"
+                        android:textColor="@color/secondary_text" />
+
+                    <RadioButton
+                        android:id="@+id/salary_less"
+                        style="@style/ContentFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salary_hint_no"
+                        android:textColor="@color/secondary_text" />
+
+                    <RadioButton
+                        android:id="@+id/salary_more"
+                        style="@style/ContentFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salary_hint_too_mush"
+                        android:textColor="@color/secondary_text" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/HeaderFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="@string/question_relationship" />
+
+                <RadioGroup
+                    android:id="@+id/relationship_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/relationship_yes"
+                        android:textColor="@color/secondary_text"
+                        style="@style/ContentFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relationship_hint_yes" />
+
+                    <RadioButton
+                        android:id="@+id/relationship_no"
+                        android:textColor="@color/secondary_text"
+                        style="@style/ContentFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relationship_hint_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/HeaderFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="@string/question_healthy_food" />
+
+                <TableLayout
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1">
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/food_fish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_fish"
+                            android:textColor="@color/secondary_text" />
+
+                        <CheckBox
+                            android:id="@+id/food_chicken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_chicken"
+                            android:textColor="@color/secondary_text" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/food_nuts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_nuts"
+                            android:textColor="@color/secondary_text" />
+
+                        <CheckBox
+                            android:id="@+id/food_milk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_milk"
+                            android:textColor="@color/secondary_text" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/food_cheeseburger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_cheeseburger"
+                            android:textColor="@color/secondary_text" />
+
+                        <CheckBox
+                            android:id="@+id/food_friedchicken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/healthy_food_friedchicken"
+                            android:textColor="@color/secondary_text" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/HeaderFont"
+                    android:paddingTop="16dp"
+                    android:text="@string/question_life_goal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/dream_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:checked="true"
+                        android:textColor="@color/secondary_text"
+                        android:id="@+id/life_goal_yes"
+                        style="@style/ContentFont"
+                        android:text="@string/life_goal_hint_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:textColor="@color/secondary_text"
+                        android:id="@+id/life_goal_no"
+                        style="@style/ContentFont"
+                        android:text="@string/life_goal_hint_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit"
+            android:text="@string/submit"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
