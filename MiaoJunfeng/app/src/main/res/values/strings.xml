@@ -4,10 +4,10 @@
     <string name="info_name_hint">Enter your name here</string>
 
     <string name="info_height_header">Height:</string>
-    <string name="info_height_hint">1.85m</string>
+    <string name="info_height_hint">1.85m Only float or int allowed.</string>
 
     <string name="info_weight_header">Weight:</string>
-    <string name="info_weight_hint">75kg.</string>
+    <string name="info_weight_hint">75kg. Only float or int allowed.</string>
     <string name="answer_thin">1. You are too light. You need more fat to protect your organ.\n</string>
     <string name="answer_fit">1. You keep you BMI great. Keep on. Some abs exercise is helpful too. Or do some Dragon-Flag like Bruce Lee.\n</string>
     <string name="answer_fat">1. You are over weight. You need to do more exercise. Buy a pair of new Shoes
@@ -43,6 +43,7 @@
     Keep on moving. Wish you have the courage to get through the difficulties.\n</string>
     <string name="answer_life_goal_no">5. Don\'t be afraid. Try every thing just like Judy did in Zootopia. You are more powerful than you think.\n</string>
 
-    <string name="mail_subject">5Things to live better.</string>
+    <string name="error_type">You forget to type your weight and height.</string>
+    <string name="mail_subject">5 Suggestions to live better.</string>
     <string name="submit">submit</string>
 </resources>

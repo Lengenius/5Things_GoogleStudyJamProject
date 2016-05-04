@@ -10,6 +10,7 @@
     tools:context="cn.studyjams.s1.sj55.miaojunfeng.WelcomeActivity">
 
     <LinearLayout
+        android:id="@+id/message_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -32,7 +33,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="@string/info_name_hint" />
+                android:hint="@string/info_name_hint"
+                android:maxLines="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,13 +50,14 @@
                 android:text="@string/info_height_header" />
 
             <EditText
-                style="@style/ContentFont"
                 android:id="@+id/user_info_height"
+                style="@style/ContentFont"
                 android:layout_width="0dp"
-                android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="@string/info_height_hint" />
+                android:hint="@string/info_height_hint"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,13 +73,14 @@
                 android:text="@string/info_weight_header" />
 
             <EditText
-                style="@style/ContentFont"
                 android:id="@+id/user_info_weight"
-                android:inputType="numberDecimal"
+                style="@style/ContentFont"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="@string/info_weight_hint" />
+                android:hint="@string/info_weight_hint"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -103,10 +107,10 @@
 
                     <RadioButton
                         android:id="@+id/salary_enough"
-                        android:checked="true"
                         style="@style/ContentFont"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:checked="true"
                         android:text="@string/salary_hint_enough"
                         android:textColor="@color/secondary_text" />
 
@@ -146,21 +150,21 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        android:checked="true"
                         android:id="@+id/relationship_yes"
-                        android:textColor="@color/secondary_text"
                         style="@style/ContentFont"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/relationship_hint_yes" />
+                        android:checked="true"
+                        android:text="@string/relationship_hint_yes"
+                        android:textColor="@color/secondary_text" />
 
                     <RadioButton
                         android:id="@+id/relationship_no"
-                        android:textColor="@color/secondary_text"
                         style="@style/ContentFont"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/relationship_hint_no" />
+                        android:text="@string/relationship_hint_no"
+                        android:textColor="@color/secondary_text" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -177,9 +181,9 @@
                     android:text="@string/question_healthy_food" />
 
                 <TableLayout
-                    android:paddingLeft="16dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
                     android:stretchColumns="0,1">
 
                     <TableRow>
@@ -234,43 +238,49 @@
                     </TableRow>
                 </TableLayout>
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
                 <TextView
                     style="@style/HeaderFont"
-                    android:paddingTop="16dp"
-                    android:text="@string/question_life_goal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="@string/question_life_goal" />
+
                 <RadioGroup
                     android:id="@+id/dream_radio_group"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <RadioButton
-                        android:checked="true"
-                        android:textColor="@color/secondary_text"
                         android:id="@+id/life_goal_yes"
                         style="@style/ContentFont"
-                        android:text="@string/life_goal_hint_yes"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/life_goal_hint_yes"
+                        android:textColor="@color/secondary_text" />
+
                     <RadioButton
-                        android:textColor="@color/secondary_text"
                         android:id="@+id/life_goal_no"
                         style="@style/ContentFont"
-                        android:text="@string/life_goal_hint_no"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/life_goal_hint_no"
+                        android:textColor="@color/secondary_text" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:id="@+id/submit"
-            android:text="@string/submit"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit" />
     </LinearLayout>
 </ScrollView>

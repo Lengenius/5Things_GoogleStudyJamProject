@@ -8,9 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
+    private LinearLayout layoutContainer;
     private EditText edWeight, edHeight, edName;
     private float weight, height;
     private String name;
@@ -23,8 +27,11 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        layoutContainer = (LinearLayout) findViewById(R.id.message_container);
         edWeight = (EditText) findViewById(R.id.user_info_weight);
         edHeight = (EditText) findViewById(R.id.user_info_height);
+        weight = 75f;
+        height = 1.85f;
         edName = (EditText) findViewById(R.id.user_info_name);
         submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -134,8 +141,16 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void addBMI() {
-        weight = Float.parseFloat(edWeight.getText().toString());
-        height = Float.parseFloat(edHeight.getText().toString());
+        String weightString = edWeight.getText().toString();
+        String heightString = edHeight.getText().toString();
+        try {
+            weight = Float.parseFloat(weightString);
+            height = Float.parseFloat(heightString);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            Toast.makeText(this,
+                    R.string.error_type, Toast.LENGTH_LONG).show();
+        }
         dealBMI(calBMI(weight, height));
     }
 
@@ -156,6 +171,10 @@ public class WelcomeActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, content);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
+        }else{
+            TextView textView = new TextView(this);
+            textView.setText(content);
+            layoutContainer.addView(textView);
         }
     }
 }

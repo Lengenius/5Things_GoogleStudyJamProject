@@ -18,11 +18,11 @@
     <string name="healthy_food_cheeseburger">芝士汉堡</string>
     <string name="healthy_food_friedchicken">炸鸡</string>
     <string name="info_height_header">身高：</string>
-    <string name="info_height_hint">1.85m</string>
+    <string name="info_height_hint">1.85m 只需数字部分即可</string>
     <string name="info_name_header">姓名</string>
     <string name="info_name_hint">输入你的姓名</string>
     <string name="info_weight_header">体重：</string>
-    <string name="info_weight_hint">75kg</string>
+    <string name="info_weight_hint">75kg 只需数字部分即可</string>
     <string name="question_relationship">你现在有男／女朋友吗？</string>
     <string name="question_salary">你觉得你的薪水够花吗？</string>
     <string name="relationship_hint_no">不，还没有</string>
@@ -30,6 +30,7 @@
     <string name="question_healthy_food">下列哪些食物属于健康食物？</string>
     <string name="salary_hint_enough">独立青年</string>
     <string name="salary_hint_no">月光族</string>
+    <string name="error_type">你输入了错误的身高体重。</string>
     <string name="salary_hint_too_mush">富二代</string>
     <string name="question_life_goal">你有梦想吗？</string>
     <string name="life_goal_hint_no">不，我终日生活在绝望中</string>
@@ -37,5 +38,5 @@
     <string name="answer_healthy_food_right">4. 不错，你很懂诶，不过食物的多样性也是很重要的哦。\n</string>
     <string name="answer_healthy_food_wrong">4. 错了，我觉得你可以看看“硬派健身”多补充一点健康知识。\n</string>
     <string name="submit">提交</string>
-    <string name="mail_subject">五件重要的事</string>
+    <string name="mail_subject">五个简单的建议</string>
 </resources>
